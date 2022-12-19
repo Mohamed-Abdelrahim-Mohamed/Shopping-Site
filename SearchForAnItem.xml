@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="Search for an Item XML">
+    <test name="Searching for an Item with an input in the search bar">
+        <parameter name="timeout" value="3"></parameter>
+        <parameter name="URL" value="https://demostore.x-cart.com/"></parameter>
+        <classes>
+            <class name="tests.SearchBar1"></class>
+        </classes>
+    </test>
+    <test name="Clicking on the search button with no input in the search bar">
+        <parameter name="timeout" value="3"></parameter>
+        <parameter name="URL" value="https://demostore.x-cart.com/"></parameter>
+        <classes>
+            <class name="tests.SearchBar2"></class>
+        </classes>
+    </test>
+</suite>

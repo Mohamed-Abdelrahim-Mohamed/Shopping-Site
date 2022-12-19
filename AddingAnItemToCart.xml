@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="Adding An Item To Cart XML">
+    <test name="Adding 1 item to the cart">
+        <parameter name="timeout" value="3"></parameter>
+        <parameter name="URL" value="https://demostore.x-cart.com/"></parameter>
+        <classes>
+            <class name="tests.AddingToCartTest1"></class>
+        </classes>
+    </test>
+    <test name="Adding more than 1 item to the cart">
+        <parameter name="timeout" value="3"></parameter>
+        <parameter name="URL" value="https://demostore.x-cart.com/"></parameter>
+        <classes>
+            <class name="tests.AddingToCartTest2"></class>
+        </classes>
+    </test>
+</suite>

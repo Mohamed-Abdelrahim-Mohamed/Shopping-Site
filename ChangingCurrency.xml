@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="Changing currency XML">
+    <test name="Changing currency to Euro">
+        <parameter name="timeout" value="3"></parameter>
+        <parameter name="URL" value="https://demostore.x-cart.com/"></parameter>
+        <parameter name="Value" value="EUR"></parameter>
+        <classes>
+            <class name="tests.Currency"></class>
+        </classes>
+    </test>
+    <test name="Changing currency to Canadian Dollar">
+        <parameter name="timeout" value="3"></parameter>
+        <parameter name="URL" value="https://demostore.x-cart.com/"></parameter>
+        <parameter name="Value" value="CAD"></parameter>
+        <classes>
+            <class name="tests.Currency"></class>
+        </classes>
+    </test>
+</suite>
